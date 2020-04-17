@@ -11,8 +11,12 @@ def line(katz_deli)
     puts "The line is currently:#{guests.join}"
   end
 end
+
 def take_a_number(katz_deli, name)
   katz_deli << name
   puts "Welcome, #{name}. You are number #{katz_deli.size} in line."
   return katz_deli
+
+def now_serving(katz_deli)
+  katz_deli.size == 0? "There is nobody waiting to be served!": "Currenty serving #{katz_deli.pop}"
 end
