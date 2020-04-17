@@ -6,9 +6,9 @@ def line(katz_deli)
     guests = []
     katz_deli.each_with_index do |name, index|
       place = index+1
-      guest << " #{place}. #{name}"
+      guests << " #{place}. #{name}"
     end
-    puts "The line is currently:#{guest.join}"
+    puts "The line is currently:#{guests.join}"
   # end
 end
 def take_a_number(katz_deli, name)
