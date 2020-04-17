@@ -18,5 +18,9 @@ def take_a_number(katz_deli, name)
   return katz_deli
 end
 def now_serving(katz_deli)
-  katz_deli.size == 0? puts "There is nobody waiting to be served!": "Currenty serving #{katz_deli.shift}"
+  if katz_deli.size == 0 
+    puts "There is nobody waiting to be served!"
+  else  
+    "Currenty serving #{katz_deli.shift!}"
+  end
 end
